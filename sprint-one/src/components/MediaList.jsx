@@ -1,14 +1,17 @@
-import React from 'react'
-import Media from '../Data/videos.json'
-import MediaCard from '../components/MediaCard'
+import React from 'react';
 
-
-function MediaList(){  
-// {loved &&
-//   loved.map((mostLoved) => {
-  return (
-  <MediaCard />
-  );
-  }
-
-  export default MediaList;
+const MediaList = (props) => {
+    return (
+        props.data && props.data.map(video => (
+            <div key={video.id}>
+                <img src={video.image} alt="" style={{ width: '60px', height: '50px' }} />
+                <div>
+                    <div>{video.title}</div>
+                    <div>{video.channel}</div>
+                </div>
+            </div>
+        ))
+    );
+};
+    
+export default MediaList;

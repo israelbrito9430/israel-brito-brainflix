@@ -1,10 +1,9 @@
 import React from 'react';
 
 const MainPhoto = (props) => {
-        
     return (
-        <div>
-            <img src={props.video.image} style={{ height: '30rem' }} />
+        <div key={props.video.id}>
+            <img src={props.video.image} alt="" style={{ height: '30rem' }} />
             <div>0:00/{props.video.duration}</div>
         </div>
     );

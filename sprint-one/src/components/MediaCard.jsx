@@ -22,17 +22,6 @@ const MediaCard = (props) => {
             <hr style={{ backgroundColor: 'gray', width: '100%' }} />
             <div>{props.video.description}</div>
         </div>
-
-        // <div>
-        //     <div>
-        //     {/* <img src={logo} alt='create-react-app logo' /> */}
-        //     </div>
-        //     <div>
-        //     title = BMX Rampage: 2018 Highlights,
-        //     channel = Red Cow,
-        //     image = https://i.imgur.com/l2Xfgpl.jpg
-        //     </div>
-        // </div>
     );
 };
     

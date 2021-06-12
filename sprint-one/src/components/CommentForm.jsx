@@ -9,7 +9,7 @@ const CommentForm = () => {
         <div>JOIN THE CONVERSATION</div>
         <input type="text" placeholder="Write comment here" />
       </div>
-      <button>COMMENT</button>
+      <button onClick={() => {}}>COMMENT</button>
     </div>
   )
 }
