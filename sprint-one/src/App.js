@@ -1,3 +1,5 @@
+import React from 'react';
+
 import videos from './Data/videos.json'
 import videoDetails from './Data/video-details.json'
 
@@ -9,32 +11,49 @@ import CommentForm from "./components/CommentForm";
 import CommentList from "./components/CommentList";
 import MediaList from "./components/MediaList";
 
-const App = () => {
+class App extends React.Component {
 
-  return (
-    <div className="App">
-      <Header />
-      <MainPhoto video={videoDetails[0]} />
-      <div style={{ display: 'flex' }}>
-        <div style={{ width: '60%' }}>
-          <MediaCard video={videoDetails[0]} />
+  state = {
+    current: videoDetails[0],
+    videoList: videos,
+  };
 
-          <div>{videoDetails[0].comments.length} Comments</div>
-          <CommentForm />
-          <hr style={{ backgroundColor: 'gray', width: '100%' }} />
+  handleClick = (event) => {
+    const newVideo = videoDetails.filter(item => item.id === event.id)[0];
+    this.setState({ current: newVideo });
 
-          { videoDetails[0].comments.map(comment => (
-            <CommentList key={comment.id} data={comment} />
-          ))}
+    const newVideoList = videos.filter(item => item.id !== event.id);
+    this.setState({ videoList: newVideoList });
+  }
 
-        </div>
-        <div style={{ width: '40%' }}>
-          <div>NEXT VIDEO</div>
-          <MediaList data={videos} />
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <MainPhoto video={this.state.current} />
+        <div style={{ display: 'flex' }}>
+          <div style={{ width: '60%' }}>
+            <MediaCard video={this.state.current} />
+  
+            <div>{this.state.current.comments.length} Comments</div>
+            <CommentForm />
+            <hr style={{ backgroundColor: 'gray', width: '100%' }} />
+  
+            { this.state.current.comments.map(comment => (
+              <CommentList key={comment.id} data={comment} />
+            ))}
+  
+          </div>
+          <div style={{ width: '40%' }}>
+            <div>NEXT VIDEO</div>
+            <MediaList data={this.state.videoList} click={this.handleClick.bind(this)} />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
+
 }
+
 
 export default App;
