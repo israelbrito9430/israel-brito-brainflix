@@ -1,15 +1,14 @@
 import React from 'react'
 import Media from '../Data/videos.json'
-
-function MediaList(){
-  return(
-     <>
-     <h1>hello</h1>
-     </>
-  )
-}
-
-export default MediaList;
+import MediaCard from '../components/MediaCard'
 
 
-    
+function MediaList(){  
+// {loved &&
+//   loved.map((mostLoved) => {
+  return (
+  <MediaCard />
+  );
+  }
+
+  export default MediaList;
