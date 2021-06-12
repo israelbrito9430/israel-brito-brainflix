@@ -2,8 +2,6 @@ import React from 'react';
 import logo from '../assets/logo/Logo-brainflix.svg'
 import UserPic from '../assets/images/Mohan-muruge.jpg'
 
-
-
 function Header(){  
   return (
     <header className="header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}> 
