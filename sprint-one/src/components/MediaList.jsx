@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './MediaList.scss'
 const MediaList = (props) => {
     return (
         props.data && props.data.map(video => (

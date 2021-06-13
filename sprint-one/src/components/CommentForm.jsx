@@ -1,6 +1,6 @@
 import React from 'react';
 import UserPic from '../assets/images/Mohan-muruge.jpg'
-
+import './CommentForm.scss'
 const CommentForm = () => {   
   return (
     <div>
