@@ -31,18 +31,18 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <MainPhoto video={this.state.current} />
-        <div style={{ display: 'flex' }}>
+        <div className="Container" style={{ display: 'flex' }}>
           <div style={{ width: '60%' }}>
             <MediaCard video={this.state.current} />
-  
+
             <div>{this.state.current.comments.length} Comments</div>
             <CommentForm />
             <hr style={{ backgroundColor: 'gray', width: '100%' }} />
-  
-            { this.state.current.comments.map(comment => (
+
+            {this.state.current.comments.map(comment => (
               <CommentList key={comment.id} data={comment} />
             ))}
-  
+
           </div>
           <div style={{ width: '40%' }}>
             <div>NEXT VIDEO</div>

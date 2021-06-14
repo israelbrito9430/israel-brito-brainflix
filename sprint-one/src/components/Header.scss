@@ -1,30 +1,57 @@
 .header {
+  padding: 16px 180px;
+  height: 80px; // Value in Spec for tablet
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF; // Validate in guide
+  box-sizing: border-box;
+  
+  &__logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 50px;
-    background: #999999;
-    
-  
-    &__logo {
-      display: flex;
-      align-items: center;
-      font-size: 2rem;
+    font-size: 2rem;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    &--left {
+      padding-left: 20px;
+      align-self: left;
     }
-  
-    &__links {
-      display: flex;
-      align-items: center;
-  
-      &--left {
-        padding-left: 20px;
-        align-self: left;
-      }
-  
-      &--right {
-        padding-right: 20px;
-        align-self: right;
-      }
+
+    &--right {
+      padding-right: 20px;
+      align-self: right;
     }
   }
-  
+}
+
+.search {
+  height: 30px; // I can't found this value in the guide
+  border-radius: 6px; // I can't found this value in the guide
+  border: 1px solid #E1E1E1; // $Text-border;
+
+  &::placeholder {
+    //@include labels;
+    font-family: "regular";
+    color: #323232; // $Paragraph-text
+  }
+
+  &--button {
+    // @include buttonStyle; and delete color, background-color, border-radius and border properties
+    margin-left: 24px; 
+    height: 30px; // // I can't found this value in the guide
+    color: white; // Validate in guide
+    background-color: #0095FF; // $Primary-Textlink
+    border-radius: 6px; // I can't found this value in the guide
+    border: none;
+  }
+
+  &--image {
+    margin-left: 24px;
+    vertical-align: middle;
+  }
+}
