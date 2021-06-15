@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACP,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,MAAM;EAClB,QAAQ,EAAE,QAAQ;EAElB,eAAO;IACL,KAAK,EAAE,KAAK;EAGd,iBAAS;IACP,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,EAAE;IACV,KAAK,EAAE,KAAK;IACZ,QAAQ,EAAE,QAAQ",
+"sources": ["MainPhoto.scss"],
+"names": [],
+"file": "MainPhoto.css"
+}

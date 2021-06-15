@@ -44,8 +44,8 @@ class App extends React.Component {
             ))}
 
           </div>
-          <div style={{ width: '40%' }}>
-            <div>NEXT VIDEO</div>
+          <div className="suggestions" style={{ width: '40%' }}>
+            <div className="suggestions--title">NEXT VIDEO</div>
             <MediaList data={this.state.videoList} click={this.handleClick.bind(this)} />
           </div>
         </div>
