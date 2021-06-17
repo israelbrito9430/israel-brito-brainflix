@@ -5,7 +5,7 @@ const CommentList = (props) => {
   return (
     <div className="comment" style={{ borderBottom: '1px solid #cecece' }}>
       <div className="comment--pic" style={{ backgroundColor: '#cecece', width: '50px', height: '50px', borderRadius: '50%' }}></div>
-      <div class="comment--info">
+      <div className="comment--info">
         <div className="comment--firtsLine">
           <div className="comment--name">{props.data.name}</div>
           <div className="comment--date">{props.data.timestamp}</div>

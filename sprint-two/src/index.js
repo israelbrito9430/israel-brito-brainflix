@@ -4,9 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import VideoUploadPage from "./pages/VideoUploadPage";
-
-ReactDOM.render(<React.StrictMode><VideoUploadPage /></React.StrictMode>,
+ReactDOM.render(<React.StrictMode><App /></React.StrictMode>,
   document.getElementById('root')
 );
 
