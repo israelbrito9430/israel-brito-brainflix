@@ -5,13 +5,12 @@ import videos from '../Data/videos.json'
 import videoDetails from '../Data/video-details.json'
 
 // Components
-import Header from '../components/Header'
-import MediaCard from '../components/MediaCard'
-import MainPhoto from '../components/MainPhoto'
+import Header from '../components/Header';
+import MediaCard from '../components/MediaCard';
+import MainPhoto from '../components/MainPhoto';
 import CommentForm from "../components/CommentForm";
 import CommentList from "../components/CommentList";
 import MediaList from "../components/MediaList";
-import VideoUpload from '../components/VideoUpload'
 
 class HomePage extends React.Component {
 
