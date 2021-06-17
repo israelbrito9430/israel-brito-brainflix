@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "bold";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf") format("openType");
+  font-weight: 700; }
+@font-face {
+  font-family: "demi";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf") format("openType");
+  font-weight: 600; }
+@font-face {
+  font-family: "regular";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf") format("openType");
+  font-weight: 400; }
+@font-face {
+  font-family: "bold";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf") format("openType");
+  font-weight: 700; }
+@font-face {
+  font-family: "demi";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf") format("openType");
+  font-weight: 600; }
+@font-face {
+  font-family: "regular";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf") format("openType");
+  font-weight: 400; }
+.suggestions--title {
+  margin: 40px 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #AFAFAF;
+  font-family: "demi"; }
+.suggestions__box {
+  margin: 3% 0;
+  display: flex; }
+  .suggestions__box--video {
+    margin-right: 2%;
+    height: 70px;
+    width: 120px; }
+  .suggestions__box__info {
+    display: flex;
+    flex-direction: column; }
+    .suggestions__box__info--name {
+      font-family: "demi";
+      font-size: 16px;
+      line-height: 24px;
+      display: inline; }
+    .suggestions__box__info--author {
+      font-family: "regular";
+      font-size: 14px;
+      line-height: 22px; }
+
+/*# sourceMappingURL=MediaList.css.map */

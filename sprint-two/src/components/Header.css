@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "bold";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf") format("openType");
+  font-weight: 700; }
+@font-face {
+  font-family: "demi";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf") format("openType");
+  font-weight: 600; }
+@font-face {
+  font-family: "regular";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf") format("openType");
+  font-weight: 400; }
+@font-face {
+  font-family: "bold";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf") format("openType");
+  font-weight: 700; }
+@font-face {
+  font-family: "demi";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf") format("openType");
+  font-weight: 600; }
+@font-face {
+  font-family: "regular";
+  src: url("../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf") format("openType");
+  font-weight: 400; }
+.header {
+  padding: 16px 180px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  box-sizing: border-box; }
+  .header__logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem; }
+  .header__links {
+    display: flex;
+    align-items: center; }
+    .header__links--left {
+      padding-left: 20px;
+      align-self: left; }
+    .header__links--right {
+      padding-right: 20px;
+      align-self: right; }
+
+.search {
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #E1E1E1; }
+  .search::placeholder {
+    font-size: 12px;
+    line-height: 20px;
+    color: #AFAFAF;
+    font-family: "regular";
+    color: #323232;
+    background-image: url("../assets/icons/Icon-search.svg");
+    background-repeat: no-repeat;
+    background-size: auto; }
+  .search--button {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "demi";
+    color: white;
+    background-color: #0095FF;
+    border-radius: 5px;
+    border: none;
+    margin-left: 24px;
+    height: 30px; }
+  .search--image {
+    margin-left: 24px;
+    vertical-align: middle; }
+
+/*# sourceMappingURL=Header.css.map */
