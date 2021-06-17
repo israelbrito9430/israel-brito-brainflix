@@ -5,12 +5,11 @@ import videos from '../Data/videos.json'
 import videoDetails from '../Data/video-details.json'
 
 // Components
-import Header from '../components/Header';
-import MediaCard from '../components/MediaCard';
-import MainPhoto from '../components/MainPhoto';
-import CommentForm from "../components/CommentForm";
-import CommentList from "../components/CommentList";
-import MediaList from "../components/MediaList";
+import MediaCard from '../components/MediaCard/MediaCard';
+import MainPhoto from '../components/MainPhoto/MainPhoto';
+import CommentForm from "../components/CommentForm/CommentForm";
+import CommentList from "../components/CommentList/CommentList";
+import MediaList from "../components/MediaList/MediaList";
 
 class HomePage extends React.Component {
 
@@ -20,17 +19,27 @@ class HomePage extends React.Component {
         };
 
         handleClick = (event) => {
-        const newVideo = videoDetails.filter(item => item.id === event.id)[0];
-        this.setState({ current: newVideo });
+      
 
         const newVideoList = videos.filter(item => item.id !== event.id);
         this.setState({ videoList: newVideoList });
         }
 
-  render() {
+        componentDidMount(){
+            console.log("componentDidMount");
+        }
+        componentDidUpdate(){
+            const newVideo = videoDetails.find(video => video.id === this.props.match.params.id);
+            console.log(newVideo)
+        }
+        componentWillUnmount(){
+            
+        }
+
+    render() {
     return (
         <>
-            <Header />
+           
                 <MainPhoto video={this.state.current} />
                 <div className="Container" style={{ display: 'flex' }}>
                     <div style={{ width: '60%' }}>
@@ -44,7 +53,7 @@ class HomePage extends React.Component {
                     </div>
                     <div className="suggestions" style={{ width: '40%' }}>
                         <div className="suggestions--title">NEXT VIDEO</div>
-                        <MediaList data={this.state.videoList} click={this.handleClick.bind(this)} />
+                        <MediaList data={this.state.videoList} onClick={() => this.handleClick()} />
                     </div>
                 </div>
         </>

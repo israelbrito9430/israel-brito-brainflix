@@ -1,6 +1,7 @@
 import React from 'react';
-import UserPic from '../assets/images/Mohan-muruge.jpg'
+import UserPic from '../../assets/images/Mohan-muruge.jpg'
 import './CommentForm.scss'
+
 const CommentForm = () => {
   return (
     <div className="CommentForm">
@@ -9,7 +10,7 @@ const CommentForm = () => {
         <div className="CommentForm__box--label">JOIN THE CONVERSATION</div>
         <input className="CommentForm__box--input" type="text" placeholder="Write comment here" />
       </div>
-      <button className="CommentForm--button" onClick={() => { }}>COMMENT</button>
+      <button className="CommentForm--button" onClick={() => this.props.handleClick()}>COMMENT</button>
     </div>
   )
 }

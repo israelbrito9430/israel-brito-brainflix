@@ -1,11 +1,9 @@
 import React from 'react';
-import {
-  Link
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 // images
-import logo from '../assets/logo/Logo-brainflix.svg'
-import UserPic from '../assets/images/Mohan-muruge.jpg'
+import logo from '../../assets/logo/Logo-brainflix.svg'
+import UserPic from '../../assets/images/Mohan-muruge.jpg'
 
 // style
 import './Header.scss'

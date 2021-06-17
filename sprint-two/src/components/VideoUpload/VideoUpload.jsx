@@ -10,7 +10,7 @@ function VideoUpload() {
       <div>
           <div>
               <span>VIDEO THUMBNAIL</span>
-              <img src="https://via.placeholder.com/150" alt=""  />
+              <img src="../" alt=""  />
           </div>
           <div>
               <span>TITLE YOUR VIDEO</span>

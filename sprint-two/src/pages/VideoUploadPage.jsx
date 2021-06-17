@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Header from '../components/Header'
-import VideoUpload from '../components/VideoUpload'
+import VideoUpload from '../components/VideoUpload/VideoUpload'
 
 class VideoUploadPage extends React.Component {
 
@@ -10,7 +9,7 @@ class VideoUploadPage extends React.Component {
 
     return (
         <>
-        <Header />
+       
         <VideoUpload />
       </>
     );
