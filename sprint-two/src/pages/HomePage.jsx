@@ -33,7 +33,9 @@ class HomePage extends React.Component {
             console.log(newVideo)
         }
         componentWillUnmount(){
-            
+            const newVideoList = videoDetails.find(video => video.id === this.props.match.params.id);
+            console.log("componentWillUnmount")
+
         }
 
     render() {
