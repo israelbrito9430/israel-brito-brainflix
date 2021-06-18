@@ -11,8 +11,8 @@ export default function App() {
     <Router>
       <Header />
       <Switch>
+        <Route exact path="/upload/:id" component={HomePage}></Route>
         <Route exact path="/home" component={HomePage}></Route>
-        <Route exact path="/:id" component={HomePage}></Route>
         <Route exact path="/upload" component={VideoUploadPage}></Route>
       </Switch>
     </Router>

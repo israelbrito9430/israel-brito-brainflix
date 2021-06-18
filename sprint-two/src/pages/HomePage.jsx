@@ -19,16 +19,14 @@ class HomePage extends React.Component {
         videoList: videos,
     };
 
-    handleClick = (event) => {
-
-
+    /* handleClick = (event) => {
         const newVideoList = videos.filter(item => item.id !== event.id);
         this.setState({ videoList: newVideoList });
-    }
+    } */
 
-    componentDidMount() {
+    /* componentDidMount() {
         console.log("componentDidMount");
-    }
+    } */
     componentDidUpdate() {
         const newVideo = videoDetails.find(video => video.id === this.props.match.params.id);
         console.log(newVideo)
@@ -36,13 +34,11 @@ class HomePage extends React.Component {
     componentWillUnmount() {
         const newVideoList = videoDetails.find(video => video.id === this.props.match.params.id);
         console.log("componentWillUnmount")
-
     }
 
     render() {
         return (
-            <>
-
+            <React.Fragment>
                 <MainPhoto video={this.state.current} />
                 <div className="container">
                     <div>
@@ -59,7 +55,7 @@ class HomePage extends React.Component {
                         <MediaList data={this.state.videoList} onClick={() => this.handleClick()} />
                     </div>
                 </div>
-            </>
+            </React.Fragment>
         );
     }
 }
