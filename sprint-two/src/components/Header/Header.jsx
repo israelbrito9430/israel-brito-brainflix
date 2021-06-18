@@ -19,12 +19,12 @@ function Header() {
       </Link>
 
       <div className="header__search">
-        <input className="search" placeholder={`${searchIcon} Search`} />
-        <Link to="/upload">
-          <button className="search__button">+ UPLOAD</button>
+        <input className="header__search__input" placeholder={`${searchIcon} Search`} />
+        <Link className="header__search__button__box" to="/upload">
+          <button className="header__search__button">+ UPLOAD</button>
         </Link>
 
-        <img className="search__image" src={UserPic} alt="User Pic" />
+        <img className="header__search__image" src={UserPic} alt="User Pic" />
       </div>
     </header>
   )
