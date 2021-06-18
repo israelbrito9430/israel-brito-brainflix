@@ -15,3 +15,9 @@ code {
 .container {
   padding: 0 16px;
 }
+
+.quantityComments {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "demi";
+}

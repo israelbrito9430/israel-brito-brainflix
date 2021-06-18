@@ -29,7 +29,7 @@
 
   &--text {
     padding: 1% 0;
-    @include paragraph-comments;
+    @include paragraph-mobile;
     font-family: "regular";
   }
 }

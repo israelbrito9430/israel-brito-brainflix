@@ -47,7 +47,7 @@ class HomePage extends React.Component {
                 <div className="container">
                     <div>
                         <MediaCard video={this.state.current} />
-                        <div>{this.state.current.comments.length} Comments</div>
+                        <div className="quantityComments">{this.state.current.comments.length} Comments</div>
                         <CommentForm />
                         <hr style={{ backgroundColor: 'gray', width: '100%' }} />
                         {this.state.current.comments.map(comment => (

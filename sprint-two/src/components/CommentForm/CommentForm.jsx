@@ -5,12 +5,14 @@ import './CommentForm.scss'
 const CommentForm = () => {
   return (
     <div className="CommentForm">
-      <img className="CommentForm__pic" src={UserPic} alt="User Pic" style={{ width: '60px', borderRadius: '50%', height: '50px' }} />
-      <div className="CommentForm__box">
-        <div className="CommentForm__box--label">JOIN THE CONVERSATION</div>
-        <input className="CommentForm__box--input" type="text" placeholder="Write comment here" />
+      <div className="CommentForm__container">
+        <img className="CommentForm__container__pic" src={UserPic} alt="User Pic" />
+        <div className="CommentForm__container__box">
+          <h5 className="CommentForm__container__box__label">JOIN THE CONVERSATION</h5>
+          <input className="CommentForm__container__box--input" type="text" placeholder="Write comment here" />
+        </div>
       </div>
-      <button className="CommentForm--button" onClick={() => this.props.handleClick()}>COMMENT</button>
+      <button className="CommentForm__button" onClick={() => this.props.handleClick()}>COMMENT</button>
     </div>
   )
 }

@@ -30,7 +30,7 @@
       
       &--author {
         font-family: "regular";
-        @include paragraph-comments;
+        @include paragraph-mobile;
       }
     }
   }

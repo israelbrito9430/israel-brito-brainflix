@@ -39,13 +39,13 @@
   }
 
   &__views {
-    @include paragraph-comments;
+    @include paragraph-mobile;
     font-family: "regular";
     display: flex;
   }
   
   &__likes {
-    @include paragraph-comments;
+    @include paragraph-comments-desktop;
     font-family: "regular";
     display: flex;
   }
@@ -53,6 +53,6 @@
   &__text {
     margin: 24px 0 40px 0;
     font-family: "regular";
-    @include paragraph;
+    @include paragraph-mobile;
   }
 }
