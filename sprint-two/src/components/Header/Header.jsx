@@ -1,9 +1,10 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // images
 import logo from '../../assets/logo/Logo-brainflix.svg'
 import UserPic from '../../assets/images/Mohan-muruge.jpg'
+import searchIcon from '../../assets/icons/Icon-search.svg'
 
 // style
 import './Header.scss'
@@ -18,12 +19,12 @@ function Header() {
       </Link>
 
       <div className="header__search">
-        <input className="search" placeholder="Search" />
-        <Link to="/upload" className="search--button">
-          <span>+ UPLOAD</span>
+        <input className="search" placeholder={`${searchIcon} Search`} />
+        <Link to="/upload">
+          <button className="search__button">+ UPLOAD</button>
         </Link>
-        
-        <img className="search--image" src={UserPic} alt="User Pic" style={{ width: '60px', borderRadius: '50%', height: '50px' }} />
+
+        <img className="search__image" src={UserPic} alt="User Pic" style={{ width: '60px', borderRadius: '50%', height: '50px' }} />
       </div>
     </header>
   )

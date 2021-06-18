@@ -17,5 +17,8 @@ code {
 }
 
 .Container {
-  padding: 0 180px;
+  /* padding: 0 180px; */
+}
+body {
+  overflow-x: hidden;
 }

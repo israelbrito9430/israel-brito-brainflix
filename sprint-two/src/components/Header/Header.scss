@@ -1,20 +1,15 @@
-@import '../../partials/typography';
-@import '../../partials/variables';
-@import '../../partials/mixins';
+@import '../../partials/_typography';
+@import '../../partials/_variables';
+@import '../../partials/_mixins';
 
 .header {
-  padding: 16px 180px;
-  height: 80px; // Value in Spec for tablet
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #FFFFFF; // Validate in guide
-  box-sizing: border-box;
+  padding: $horizontalPaddingMobile;
   
   &__logo {
-    display: flex;
+    height: 48px;
     align-items: center;
-    font-size: 2rem;
+    display: flex;
+    justify-content: center;
   }
 
   &__links {
@@ -34,27 +29,28 @@
 }
 
 .search {
-  height: 30px; // I can't found this value in the guide
-  border-radius: 6px; // I can't found this value in the guide
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
   border: 1px solid $Text-border;
 
   &::placeholder {
-    @include labels;
+    color: $Text-label;
     font-family: "regular";
-    color: $Paragraph-text;
-    background-image: url("../../assets/icons/Icon-search.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
   }
 
-  &--button {
+  &__button {
+    margin: 8px 16px 16px 0; 
+    height: 40px;
+    width: 78%;
     @include buttonStyle;
-    margin-left: 24px; 
-    height: 30px; // // I can't found this value in the guide
+    font-size: 14px;
   }
 
-  &--image {
-    margin-left: 24px;
+  &__image {
+    height: 40px;
+    width: 45px;
     vertical-align: middle;
+    border-radius: 50%;
   }
 }

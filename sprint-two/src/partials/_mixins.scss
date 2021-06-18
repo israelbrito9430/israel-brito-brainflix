@@ -1,7 +1,6 @@
-@import'typography';
+@import'_typography';
 
 @mixin buttonStyle {
-  @include subheader;
   font-family: "demi";
   color: white; // Validate correct color in the guide
   background-color: #0095FF; // $Primary-Textlink

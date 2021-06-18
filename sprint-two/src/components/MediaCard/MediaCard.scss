@@ -1,5 +1,5 @@
-@import'../../partials/typography';
-@import'../../partials/mixins';
+@import'../../partials/_typography';
+@import'../../partials/_mixins';
 
 .video {
 
@@ -17,7 +17,6 @@
   &--name {
     margin-top: 48px;
     font-family: "bold";
-    @include h1Header;
   }
 
   &__info {
@@ -26,13 +25,11 @@
     align-items: flex-end;
     
     &--autor {
-      @include subheader;
       font-family: "bold";
       margin-right: 5%;
     }
   
     &--date {
-      @include labels;
       font-family: "regular";
     }
   }

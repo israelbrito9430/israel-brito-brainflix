@@ -1,4 +1,4 @@
-@import'variables';
+@import'_variables';
 
 @font-face{
     font-family: "bold";
@@ -16,28 +16,74 @@
     font-weight: 400;
 }
 
-@mixin h1Header {
-    font-size: 36px;
-    line-height: 44px;
+// Fonts for mobile
+
+@mixin paragraph {
+    font-size: 13px;
+    line-height: 18px;
+};
+
+@mixin lists-contactInformation-mobile {
+    font-size: 13px;
+    line-height: 18px;
+};
+
+$talet-width: 768px;
+
+@mixin mobile-fonts {
+    @media (min-width: 320px) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+        h1 {
+            font-size: 24px;
+            line-height: 32px;
+        };
+        h2 {
+            font-size: 14px;
+            line-height: 22px;
+        };
+        h5, label {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
 }
 
-@mixin subheader {
-    font-size: 16px;
-    line-height: 24px;
-}
+// Fonts for desktop
 
-@mixin labels {
-    font-size: 12px;
-    line-height: 20px;
-    color: $Text-label;
-}
+@mixin hero-header {
+    font-size: 60px;
+    line-height: 68px;
+};
+
+@mixin header {
+    font-size: 24px;
+    line-height: 32px;
+};
 
 @mixin paragraph-comments {
     font-size: 14px;
     line-height: 22px;
-}
+};
 
-@mixin list-contacInfo {
+@mixin lists-contactInformation-mobile {
     font-size: 14px;
     line-height: 20px;
+};
+
+@mixin tablet-fonts {
+    @media (min-width: #{$tablet-width - 1px}) {
+        @content;
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+        };
+        h3 {
+            font-size: 16px;
+            line-height: 24px;
+        };
+        h5, label {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
 }
