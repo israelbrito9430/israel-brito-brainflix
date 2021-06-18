@@ -1,35 +1,46 @@
 @import'../../partials/_typography';
 @import'../../partials/_variables';
+@import'../../partials/_mixins';
 
 .comment {
-  padding: 3% 0;
+  padding: 5% 0;
   display: flex;
-  border-right: 1px solid $Text-border;
+  @include border;
+  border-right: none;
+  border-left: none;
 
-  &--pic {
-    margin-right: 2%;
+  &__pic {
+    margin-right: 16px;
+    height: 45px;
+    width: 45px;
+    background-color: #cecece;
+    border-radius: 50%;
   }
 
-  &--info {
+  &__info {
     width: 85%;
-  }
-
-  &--firtsLine {
-    display: flex;
-  }
-
-  &--name {
-    margin-right: 2%;
-    font-family: "demi";
-  }
-  
-  &--date {
-    font-family: "regular";
-  }
-
-  &--text {
-    padding: 1% 0;
-    @include paragraph-mobile;
-    font-family: "regular";
+    
+    &__firtsLine {
+      display: flex;
+      justify-content: space-between;
+      
+      &__name {
+        margin: 0;
+        font-family: "demi";
+        @include subheader-mobile;
+      }
+      
+      &__date {
+        margin: 0;
+        font-family: "regular";
+        @include labels-mobile;
+      }
+    }
+    
+    &__text {
+      margin: 1% 0;
+      @include paragraph-mobile;
+      font-family: "regular";
+    }
   }
 }

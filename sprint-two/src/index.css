@@ -21,3 +21,11 @@ code {
   line-height: 22px;
   font-family: "demi";
 }
+
+.suggestions__title {
+  margin: 40px 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AFAFAF;
+  font-family: "demi";
+};

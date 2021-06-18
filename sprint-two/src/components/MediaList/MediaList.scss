@@ -2,33 +2,41 @@
 @import '../../partials/_variables';
 @import '../../partials/_mixins';
 
+
+a {
+  color: $Paragraph-text;
+  text-decoration: none;
+}
+
 .suggestions {
 
-  &--title {
-    margin: 40px 0;
-    font-family: "demi";
-  }
-
   &__box {
-    margin: 3% 0;
+    margin-bottom: 24px;
     display: flex;
     
-    &--video {
-      margin-right: 2%;
+    &__video {
+      margin-right: 16px;
       height: 70px;
+      min-width: 120px;
       width: 120px;
+      border-radius: 5px;
     }
     
     &__info {
+      height: 70px;
       display: flex;
       flex-direction: column;
+      overflow-y: scroll;
       
-      &--name {
+      &__name {
+        margin: 0;
         font-family: "demi";
+        @include subheader-mobile;
         display: inline;
       }
       
-      &--author {
+      &__author {
+        margin: 5px 0 0 0;
         font-family: "regular";
         @include paragraph-mobile;
       }

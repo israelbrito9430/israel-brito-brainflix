@@ -45,12 +45,11 @@ class HomePage extends React.Component {
                         <MediaCard video={this.state.current} />
                         <div className="quantityComments">{this.state.current.comments.length} Comments</div>
                         <CommentForm />
-                        <hr style={{ backgroundColor: 'gray', width: '100%' }} />
                         {this.state.current.comments.map(comment => (
                             <CommentList key={comment.id} data={comment} />
                         ))}
                     </div>
-                    <div className="suggestions" style={{ width: '40%' }}>
+                    <div className="suggestions">
                         <div className="suggestions__title">NEXT VIDEO</div>
                         <MediaList data={this.state.videoList} onClick={() => this.handleClick()} />
                     </div>
