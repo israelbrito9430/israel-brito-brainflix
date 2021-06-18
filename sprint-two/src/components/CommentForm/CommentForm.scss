@@ -27,6 +27,8 @@
             &__input {
                 padding: 3%;
                 width: 100%;
+                @include paragraph-mobile;
+                font-family: "regular";
                 background-color: $Text-background;
                 border: 2px solid $Text-border;
                 box-sizing: border-box;
@@ -35,6 +37,7 @@
                 &::placeholder {
                     font-family: "regular";
                     color: $Paragraph-text;
+                    @include paragraph-mobile;
                 }
     
                 &:active {

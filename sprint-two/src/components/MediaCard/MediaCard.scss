@@ -6,6 +6,7 @@
   &__name {
     margin-bottom: 0;
     font-family: "bold";
+    @include header-mobile;
   }
 
   &__contents {
@@ -32,6 +33,7 @@
     width: 70%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__icon {

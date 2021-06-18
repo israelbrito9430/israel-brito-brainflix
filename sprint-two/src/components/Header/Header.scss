@@ -11,21 +11,6 @@
     display: flex;
     justify-content: center;
   }
-
-  &__links {
-    display: flex;
-    align-items: center;
-
-    &--left {
-      padding-left: 20px;
-      align-self: left;
-    }
-
-    &--right {
-      padding-right: 20px;
-      align-self: right;
-    }
-  }
 }
 
 .search {
@@ -35,8 +20,8 @@
   border: 1px solid $Text-border;
 
   &::placeholder {
-    color: $Text-label;
     font-family: "regular";
+    @include labels-mobile;
   }
 
   &__button {
@@ -44,7 +29,7 @@
     height: 40px;
     width: 78%;
     @include buttonStyle;
-    font-size: 14px;
+    @include subheader-mobile;
   }
 
   &__image {
