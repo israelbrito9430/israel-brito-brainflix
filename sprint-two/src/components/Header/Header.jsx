@@ -24,7 +24,7 @@ function Header() {
           <button className="search__button">+ UPLOAD</button>
         </Link>
 
-        <img className="search__image" src={UserPic} alt="User Pic" style={{ width: '60px', borderRadius: '50%', height: '50px' }} />
+        <img className="search__image" src={UserPic} alt="User Pic" />
       </div>
     </header>
   )

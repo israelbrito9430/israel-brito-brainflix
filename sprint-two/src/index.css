@@ -12,13 +12,6 @@ code {
     monospace;
 }
 
-.suggestions {
-  margin-left: 3%;
-}
-
-.Container {
-  /* padding: 0 180px; */
-}
-body {
-  overflow-x: hidden;
+.container {
+  padding: 0 16px;
 }

@@ -11,40 +11,41 @@ import CommentForm from "../components/CommentForm/CommentForm";
 import CommentList from "../components/CommentList/CommentList";
 import MediaList from "../components/MediaList/MediaList";
 
+
 class HomePage extends React.Component {
 
     state = {
         current: videoDetails[0],
         videoList: videos,
-        };
+    };
 
-        handleClick = (event) => {
-      
+    handleClick = (event) => {
+
 
         const newVideoList = videos.filter(item => item.id !== event.id);
         this.setState({ videoList: newVideoList });
-        }
+    }
 
-        componentDidMount(){
-            console.log("componentDidMount");
-        }
-        componentDidUpdate(){
-            const newVideo = videoDetails.find(video => video.id === this.props.match.params.id);
-            console.log(newVideo)
-        }
-        componentWillUnmount(){
-            const newVideoList = videoDetails.find(video => video.id === this.props.match.params.id);
-            console.log("componentWillUnmount")
+    componentDidMount() {
+        console.log("componentDidMount");
+    }
+    componentDidUpdate() {
+        const newVideo = videoDetails.find(video => video.id === this.props.match.params.id);
+        console.log(newVideo)
+    }
+    componentWillUnmount() {
+        const newVideoList = videoDetails.find(video => video.id === this.props.match.params.id);
+        console.log("componentWillUnmount")
 
-        }
+    }
 
     render() {
-    return (
-        <>
-           
+        return (
+            <>
+
                 <MainPhoto video={this.state.current} />
-                <div className="Container" style={{ display: 'flex' }}>
-                    <div style={{ width: '60%' }}>
+                <div className="container">
+                    <div>
                         <MediaCard video={this.state.current} />
                         <div>{this.state.current.comments.length} Comments</div>
                         <CommentForm />
@@ -54,13 +55,13 @@ class HomePage extends React.Component {
                         ))}
                     </div>
                     <div className="suggestions" style={{ width: '40%' }}>
-                        <div className="suggestions--title">NEXT VIDEO</div>
+                        <div className="suggestions__title">NEXT VIDEO</div>
                         <MediaList data={this.state.videoList} onClick={() => this.handleClick()} />
                     </div>
                 </div>
-        </>
-    );
-  }
+            </>
+        );
+    }
 }
 
 export default HomePage;
