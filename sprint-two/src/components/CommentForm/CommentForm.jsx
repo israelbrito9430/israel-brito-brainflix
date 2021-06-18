@@ -8,8 +8,8 @@ const CommentForm = () => {
       <div className="CommentForm__container">
         <img className="CommentForm__container__pic" src={UserPic} alt="User Pic" />
         <div className="CommentForm__container__box">
-          <h5 className="CommentForm__container__box__label">JOIN THE CONVERSATION</h5>
-          <input className="CommentForm__container__box--input" type="text" placeholder="Write comment here" />
+          <label className="CommentForm__container__box__label">JOIN THE CONVERSATION</label>
+          <textarea className="CommentForm__container__box__input" type="text" placeholder="Write comment here" rows="4" />
         </div>
       </div>
       <button className="CommentForm__button" onClick={() => this.props.handleClick()}>COMMENT</button>

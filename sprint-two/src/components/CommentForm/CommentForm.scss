@@ -9,8 +9,9 @@
         display: flex;
         
         &__pic {
+            margin-top: 7%;
             height: 45px;
-            width: 50px;
+            width: 48px;
             border-radius: 50%;
         }
 
@@ -18,16 +19,18 @@
             padding-left: 16px;
             
             &__label {
+                margin: 0 0 2% 0;
+                @include labels-mobile;
                 font-family: "demi";
-                color: $Text-label;
             }
             
-            &--input {
+            &__input {
                 padding: 3%;
-                //width: 436px;
+                width: 100%;
                 background-color: $Text-background;
-                border: 1px solid $Text-border;
+                border: 2px solid $Text-border;
                 box-sizing: border-box;
+                border-radius: 3px;
     
                 &::placeholder {
                     font-family: "regular";
@@ -42,6 +45,9 @@
     }
 
     &__button {
+        margin: 16px 0 24px 22%;
+        width: 78%;
+        height: 45px;
         @include buttonStyle;
     }
 }
