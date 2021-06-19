@@ -61,7 +61,6 @@
   }
 }
 
-
 @media (min-width: 768px) {
   .header {
     padding: 16px;
@@ -81,14 +80,37 @@
 
       &__button {
         margin: 0;
+        padding: 0;
         height: 40px;
         width: 100%;
         
         &__box {
           margin: 0 24px;
-          padding: 0;
           width: 30%;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .header {
+    padding: $horizontalPaddingDesktop;
+
+    &__logo {
+      margin-right: 509px;
+      height: 100%;
+    }
+
+    &__search {
+      
+      &__input {
+      width: 56%;
+      }
+      
+      &__button__box {
+        width: 23%;
       }
     }
   }
