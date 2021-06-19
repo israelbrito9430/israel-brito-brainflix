@@ -20,8 +20,7 @@
       height: 40px;
       align-items: center;
       display: flex;
-      border-radius: 6px;
-      border: 1px solid $Text-border;
+      @include formBorder;
       position: relative;
       
       
@@ -47,7 +46,7 @@
     &__button {
       margin: 8px 16px 16px 0; 
       height: 40px;
-      width: 78%;
+      width: 224px;
       @include buttonStyle;
       @include subheader-mobile;
     }

@@ -1,0 +1,74 @@
+@import "../../partials/_typography";
+@import "../../partials/_variables";
+@import "../../partials/_mixins";
+
+textarea {
+  padding: auto 0 auto 2%;
+  height: 143px;
+  @include formBorder;
+
+  &::placeholder {
+    padding-left: 2%;
+  }
+}
+
+.uploadVideo {
+  padding: $horizontalPaddingMobile;
+  font-family: "bold";
+
+  &__title{
+    margin: 8px 0 32px 0;
+    @include header-mobile;
+  }
+  
+  &__subtitle {
+    margin-top: 0;
+    @include labels-mobile;
+  }
+
+  &__video {
+    margin-bottom: 32px;
+    height: 153px;
+    width: 288px;
+    border-radius: 6px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    
+    &__title {
+      @include labels-mobile;
+    }
+
+    &__input {
+      margin-bottom: 24px;
+      height: 30px;
+
+      &::placeholder {
+        padding-left: 2%;
+        line-height: 30px;
+      }
+    }
+  }
+
+  &__buttons {
+    margin: 32px 0 24px 0;
+    text-align: center;
+    
+    &__publish {
+      margin-bottom: 24px;
+      height: 40px;
+      width: 100%;
+      display: inline;
+      @include buttonStyle;
+    }
+    
+    &__cancel {
+      color: $Primary-Textlink;
+      font-family: "demi";
+      border: none;
+      background-color: transparent;
+    }
+  }
+}

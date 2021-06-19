@@ -9,8 +9,13 @@
   cursor: pointer;
 }
 
-@mixin border {
+@mixin borderBox {
   border-color: $Text-border;
   border-style: solid;
   border-width: 1px;
+}
+
+@mixin formBorder {
+  border-radius: 6px;
+  border: 1px solid $Text-border;
 }
