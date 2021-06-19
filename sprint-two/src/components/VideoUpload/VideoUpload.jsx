@@ -18,7 +18,7 @@ function VideoUpload() {
                     <textarea className="uploadVideo__form__input" type="text" placeholder="Add a title to your video" />
 
                     <span className="uploadVideo__form__title">ADD A VIDEO DESCRIPTION</span>
-                    <textarea type="text" placeholder="Add a description of your video" />
+                    <textarea className="uploadVideo__form__input2" type="text" placeholder="Add a description of your video" />
                 </div>
             </div>
             <div className="uploadVideo__buttons">
