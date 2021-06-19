@@ -5,20 +5,20 @@ function VideoUpload() {
 
     return (
         <div className="uploadVideo">
-            <div>
-                <h1 className="uploadVideo__title">Upload Video</h1>
+            <div className="uploadVideo__container1">
+                <h1 className="uploadVideo__container1__title">Upload Video</h1>
             </div>
-            <div className="uploadVideo__container">
-                <div>
-                    <p className="uploadVideo__subtitle">VIDEO THUMBNAIL</p>
-                    <img className="uploadVideo__video" src="../" alt="Video title" />
+            <div className="uploadVideo__container2">
+                <div className="uploadVideo__container2__pic">
+                    <p className="uploadVideo__container2__subtitle">VIDEO THUMBNAIL</p>
+                    <img className="uploadVideo__container2__video" src="../" alt="Video title" />
                 </div>
-                <div className="uploadVideo__form">
-                    <span className="uploadVideo__form__title">TITLE YOUR VIDEO</span>
-                    <textarea className="uploadVideo__form__input" type="text" placeholder="Add a title to your video" />
+                <div className="uploadVideo__container2__form">
+                    <span>TITLE YOUR VIDEO</span>
+                    <textarea className="uploadVideo__container2__form__input" type="text" placeholder="Add a title to your video" />
 
-                    <span className="uploadVideo__form__title">ADD A VIDEO DESCRIPTION</span>
-                    <textarea className="uploadVideo__form__input2" type="text" placeholder="Add a description of your video" />
+                    <span>ADD A VIDEO DESCRIPTION</span>
+                    <textarea className="uploadVideo__container2__form__input2" type="text" placeholder="Add a description of your video" />
                 </div>
             </div>
             <div className="uploadVideo__buttons">
