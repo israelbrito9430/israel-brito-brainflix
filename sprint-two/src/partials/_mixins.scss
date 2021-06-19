@@ -1,12 +1,17 @@
 @import '_typography';
+@import '_variables';
 
 @mixin buttonStyle {
   font-family: "demi";
-  color: white; // Validate correct color in the guide
-  background-color: #0095FF; // $Primary-Textlink
-  border-radius: 5px;
+  color: white;
+  background-color: $Primary-Textlink;
+  border-radius: 4px;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $Button-Hover;
+  }
 }
 
 @mixin borderBox {

@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useParams
 } from "react-router-dom";
 
 // Components
@@ -15,6 +16,7 @@ export default function App() {
     <Router>
         <Switch>
           <Route exact path="/" component={HomePage}></Route>
+          <Route exact path="/:id" component={HomePage}></Route>
           <Route exact path="/home" component={HomePage}></Route>
           <Route exact path="/upload" component={VideoUploadPage}></Route>
         </Switch>

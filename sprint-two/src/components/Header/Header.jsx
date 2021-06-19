@@ -24,7 +24,7 @@ function Header() {
           <input type="text" placeholder="Search" />
         </div>
         <Link className="header__search__button__box" to="/upload">
-          <button className="header__search__button">+ UPLOAD</button>
+          <button className="header__search__button blueButton">+ UPLOAD</button>
         </Link>
 
         <img className="header__search__image" src={UserPic} alt="User Pic" />

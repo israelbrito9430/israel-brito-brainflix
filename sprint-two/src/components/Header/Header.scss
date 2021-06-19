@@ -30,6 +30,11 @@
         width: 100%;
         background-color: transparent;
         border: none;
+        
+        &:focus {
+          @include formBorder;
+          outline-color: $Primary-Textlink;
+        }
       }
 
       & img {

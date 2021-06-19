@@ -12,7 +12,7 @@ const CommentForm = () => {
           <textarea className="CommentForm__container__box__input" type="text" placeholder="Write comment here" />
         </div>
       </div>
-      <button className="CommentForm__button" onClick={() => this.props.handleClick()}>COMMENT</button>
+      <button className="CommentForm__button blueButton" onClick={() => this.props.handleClick()}>COMMENT</button>
     </div>
   )
 }

@@ -10,6 +10,10 @@ textarea {
   &::placeholder {
     padding-left: 2%;
   }
+
+  &:focus {
+    outline-color: $Primary-Textlink;
+  }
 }
 
 .uploadVideo {

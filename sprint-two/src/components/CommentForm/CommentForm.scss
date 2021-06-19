@@ -41,8 +41,8 @@
                     @include paragraph-mobile;
                 }
     
-                &:active {
-                    border-color: $Primary-Textlink;
+                &:focus {
+                    outline-color: $Primary-Textlink;
                 }
             }
         }

@@ -22,7 +22,7 @@ function VideoUpload() {
                 </div>
             </div>
             <div className="uploadVideo__buttons">
-                <button className="uploadVideo__buttons__publish">PUBLISH</button>
+                <button className="uploadVideo__buttons__publish blueButton">PUBLISH</button>
                 <button className="uploadVideo__buttons__cancel">CANCEL</button>
             </div>
         </div >
