@@ -74,14 +74,10 @@
     }
 
     &__search {
-      width: 55%;
+      width: 61%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-
-      &__input {
-        width: 58%;
-      }
 
       &__button {
         margin: 0;
@@ -90,6 +86,7 @@
         
         &__box {
           margin: 0 24px;
+          padding: 0;
           width: 30%;
         }
       }

@@ -23,20 +23,9 @@
     display: flex;
     justify-content: center;
     background-color: $Navigation-background;
-    position: relative;
 
     &__pic {
       width: 700px;
-    }
-
-    &__timer {
-      left: 70%;
-      bottom: 0;
-      @include labels-mobile;
-      color: $Text-background;
-      font-family: "regular";
-      display: flex;
-      position: absolute;
     }
   }
 }
