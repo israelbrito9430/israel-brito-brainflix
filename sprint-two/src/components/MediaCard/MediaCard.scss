@@ -110,3 +110,13 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+
+  .video {
+
+    &__contents {
+      padding-right: 32px;
+    }
+  }
+}

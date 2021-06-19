@@ -95,3 +95,23 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+
+    .CommentForm {
+
+        &__container {
+
+            &__box {
+
+                &__input {
+                    width: 436px;
+                }
+            }
+        }
+
+        &__button {
+            margin-right: 32px;
+        }
+    }
+}

@@ -30,9 +30,20 @@ code {
   font-family: "demi";
 }
 
-@media (min-width:768px) {
+@media (min-width:1440px) {
+  .container {
+    padding: 0 180px;
+    display: flex;
+  }
 
-  .comments div:first-child{
-    border-top: none;
+  .currentVideo {
+    width: 712px;
+  }
+
+  .suggestions {
+    padding-left: 32px;
+    border-left-color: #E1E1E1;
+    border-left-style: solid;
+    border-left-width: 1px;
   }
 }

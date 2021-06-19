@@ -25,14 +25,14 @@ class HomePage extends React.Component {
 
     componentDidMount() {
         getVideos().then((res => {
-            this.setState({ videoList:  res});
+            this.setState({ videoList: res });
         }));
-        
+
         getVideoById('1af0jruup5gu').then((res => {
             console.log(res)
         }));
 
-        
+
     };
 
     handleClick = (event) => {
@@ -51,7 +51,7 @@ class HomePage extends React.Component {
                 <Header />
                 <MainPhoto video={this.state.current} />
                 <div className="container">
-                    <div>
+                    <div className="currentVideo">
                         <MediaCard video={this.state.current} />
                         <div className="quantityComments">{this.state.current.comments.length} Comments</div>
                         <CommentForm />
