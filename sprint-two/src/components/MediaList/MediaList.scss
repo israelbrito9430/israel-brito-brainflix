@@ -20,6 +20,7 @@ a {
       min-width: 120px;
       width: 120px;
       border-radius: 5px;
+      cursor: pointer;
     }
     
     &__info {
@@ -33,6 +34,7 @@ a {
         font-family: "demi";
         @include subheader-mobile;
         display: inline;
+        cursor: pointer;
       }
       
       &__author {
