@@ -17,8 +17,8 @@ code {
 }
 
 .quantityComments {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "demi";
 }
 
@@ -28,4 +28,11 @@ code {
   line-height: 22px;
   color: #AFAFAF;
   font-family: "demi";
-};
+}
+
+@media (min-width:768px) {
+
+  .comments div:first-child{
+    border-top: none;
+  }
+}

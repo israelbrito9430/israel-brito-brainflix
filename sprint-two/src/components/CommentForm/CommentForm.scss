@@ -26,6 +26,7 @@
             
             &__input {
                 padding: 3%;
+                height: 70px;
                 width: 100%;
                 @include paragraph-mobile;
                 font-family: "regular";
@@ -52,5 +53,45 @@
         width: 78%;
         height: 45px;
         @include buttonStyle;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .CommentForm {
+        display: flex;
+        align-items: center;
+        
+        &__container {
+            width: 80%;
+
+            &__pic {
+                margin: 24px 0;
+            }
+            
+            &__box {
+                width: 90%;
+
+                &__label {
+                    @include labels-desktop;
+                }
+
+                &__input {
+                    margin-top: 0.7%;
+                    padding: auto 2%;
+                    height: 46px;
+                    @include paragraph-comments-desktop;
+
+                    &::placeholder{
+                        @include paragraph-comments-desktop;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            margin: 0 40px 0 16px;
+            width: 160px;
+        }
     }
 }

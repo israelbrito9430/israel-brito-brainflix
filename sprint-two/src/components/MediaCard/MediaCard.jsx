@@ -10,7 +10,7 @@ const MediaCard = (props) => {
             <h2 className="video__name">{props.video.title}</h2>
             <div className="video__contents">
                 <div className="video__info">
-                    <h3 className="video__info__autor">By {props.video.channel}</h3>
+                    <h3 className="video__info__author">By {props.video.channel}</h3>
                     <div className="video__info__date">12/18/2018</div>
                 </div>
                 <div className="video__socialInfo">
