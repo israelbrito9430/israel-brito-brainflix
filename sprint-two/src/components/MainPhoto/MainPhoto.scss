@@ -29,3 +29,14 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+
+  .MainPhoto {
+    height: 540px;
+    
+    &__pic{    
+      width: 944px;
+    }
+  }
+}
