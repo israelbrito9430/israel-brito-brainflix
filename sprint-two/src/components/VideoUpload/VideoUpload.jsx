@@ -8,7 +8,7 @@ function VideoUpload() {
             <div>
                 <h1 className="uploadVideo__title">Upload Video</h1>
             </div>
-            <div>
+            <div className="uploadVideo__container">
                 <div>
                     <p className="uploadVideo__subtitle">VIDEO THUMBNAIL</p>
                     <img className="uploadVideo__video" src="../" alt="Video title" />

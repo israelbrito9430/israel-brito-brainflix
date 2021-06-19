@@ -13,7 +13,6 @@ textarea {
 }
 
 .uploadVideo {
-  padding: $horizontalPaddingMobile;
   font-family: "bold";
   border-top-color: $Text-border;
   border-top-style: solid;
@@ -21,8 +20,12 @@ textarea {
 
   &__title{
     margin: 0;
-    padding: 24px 0 32px 0;
+    padding: 24px 16px 32px 16px;
     @include header-mobile;
+  }
+
+  &__container {
+    padding: $horizontalPaddingMobile;
   }
   
   &__subtitle {

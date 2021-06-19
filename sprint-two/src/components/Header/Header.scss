@@ -27,7 +27,7 @@
       & input {
         padding: 0 0 0 12%;
         height: inherit;
-        width: inherit;
+        width: 100%;
         background-color: transparent;
         border: none;
       }
@@ -107,10 +107,6 @@
     }
 
     &__search {
-      
-      &__input {
-      width: 56%;
-      }
       
       &__button__box {
         width: 23%;
