@@ -1,9 +1,4 @@
 import React from 'react';
-import { withRouter } from "react-router";
-
-// Data
-// import videos from '../Data/videos.json'
-// import videoDetails from '../Data/video-details.json'
 
 // Components
 import Header from '../components/Header/Header'
@@ -12,7 +7,6 @@ import MainPhoto from '../components/MainPhoto/MainPhoto'
 import CommentForm from "../components/CommentForm/CommentForm";
 import CommentList from "../components/CommentList/CommentList";
 import MediaList from "../components/MediaList/MediaList";
-import VideoUpload from '../components/VideoUpload/VideoUpload'
 
 // api
 import { GetVideos, GetVideoById, AddCommentById, DeleteCommentById } from "../api/videoAPI";
@@ -24,23 +18,25 @@ class HomePage extends React.Component {
         this.state = {
             current: null,
             videoList: [],
+            filteredVideos: [],
         };
     }
-    
 
     componentDidMount() {
         const videoId = this.props.match.params.id;
         let newList = [];
-
+        
         GetVideos().then((res => {
             if(!videoId) {
                 this.getVideoById(res[0].id);
                 newList = res.filter(item => item.id !== res[0].id)
             } else {
+                this.getVideoById(videoId);
                 newList = res.filter(item => item.id !== videoId)
             }
 
             this.setState({ videoList:  newList});
+            this.setState({ filteredVideos:  newList});
         }));
     };
 
@@ -52,7 +48,7 @@ class HomePage extends React.Component {
             this.getVideoById(videoId);
 
             const newList = this.state.videoList.filter(item => item.id !== videoId);
-            this.setState({ videoList: newList });
+            this.setState({ filteredVideos: newList });
         }
     };
 
@@ -64,7 +60,9 @@ class HomePage extends React.Component {
 
     addCommentById = (id, data) => {
         AddCommentById(id, data).then((res => {
-          console.log('add: ', res);
+          const newCurrent = this.state.current;
+          newCurrent.comments = [...newCurrent.comments, res];
+          this.setState({ current: newCurrent });
       }));
     };
 
@@ -74,16 +72,13 @@ class HomePage extends React.Component {
       }));
     };
 
-    handleClick = (event) => {
-        console.log('event: ', event);
+    handleClick = (value) => {
+        const newComment = {
+            name: "Nigel",
+            comment: value
+        };
 
-        // const newVideo = videoDetails.filter(item => item.id === event.id)[0];
-        // this.setState({ current: newVideo });
-
-        // const videosCopy = this.state.videoList;
-
-        // const newVideoList = videosCopy.filter(item => item.id !== event.id);
-        // this.setState({ videoList: newVideoList });
+        this.addCommentById(this.state.current.id, newComment);
     };
 
     render() {
@@ -97,7 +92,7 @@ class HomePage extends React.Component {
                     <div className="currentVideo">
                         <MediaCard video={this.state.current} />
                         <div className="quantityComments">{this.state.current.comments.length} Comments</div>
-                        <CommentForm />
+                        <CommentForm handleClick={this.handleClick} />
                         <div className="comments">
                             {this.state.current.comments.map(comment => (
                                 <CommentList key={comment.id} data={comment} />
@@ -106,7 +101,7 @@ class HomePage extends React.Component {
                     </div>
                     <div className="suggestions">
                         <div className="suggestions__title">NEXT VIDEO</div>
-                        <MediaList data={this.state.videoList} />
+                        <MediaList data={this.state.filteredVideos} />
                     </div>
                 </div>
                 </>

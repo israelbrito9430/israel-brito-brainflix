@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const MediaList = (props) => {
     return (
         props.data && props.data.map(video => (
-            <Link to={`/${video.id}`} className="suggestions__box" key={video.id} >
+            <Link to={`/home/${video.id}`} className="suggestions__box" key={video.id} >
                 <img className="suggestions__box__video" src={video.image} alt="Video suggest" />
                 <div className="suggestions__box__info">
                     <p className="suggestions__box__info__name" >{video.title}</p>

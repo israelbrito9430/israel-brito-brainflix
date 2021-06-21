@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useParams
 } from "react-router-dom";
 
 // Components
@@ -15,9 +13,9 @@ export default function App() {
   return (
     <Router>
         <Switch>
-          <Route exact path="/" component={HomePage}></Route>
-          <Route exact path="/:id" component={HomePage}></Route>
+          <Route exact path="/" component={HomePage} ></Route>
           <Route exact path="/home" component={HomePage}></Route>
+          <Route path="/home/:id" component={HomePage}></Route>
           <Route exact path="/upload" component={VideoUploadPage}></Route>
         </Switch>
     </Router>

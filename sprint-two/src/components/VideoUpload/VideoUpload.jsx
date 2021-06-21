@@ -1,7 +1,7 @@
 import React from 'react';
-import upload from './videoUpload.scss';
+import './videoUpload.scss'
 
-function VideoUpload() {
+const VideoUpload = () => {
 
     return (
         <div className="uploadVideo">
@@ -25,7 +25,7 @@ function VideoUpload() {
                 <button className="uploadVideo__buttons__publish blueButton">PUBLISH</button>
                 <button className="uploadVideo__buttons__cancel">CANCEL</button>
             </div>
-        </div >
+        </div>
     )
 }
 
