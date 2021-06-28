@@ -1,0 +1,72 @@
+@import'../../partials/_typography';
+@import'../../partials/_variables';
+@import'../../partials/_mixins';
+
+.comment {
+  padding: 5% 0;
+  display: flex;
+  @include borderBox;
+  border-right: none;
+  border-left: none;
+
+  &__pic {
+    margin-right: 16px;
+    height: 45px;
+    width: 45px;
+    background-color: #cecece;
+    border-radius: 50%;
+  }
+
+  &__info {
+    width: 85%;
+    
+    &__firtsLine {
+      display: flex;
+      justify-content: space-between;
+      
+      &__name {
+        margin: 0;
+        font-family: "demi";
+        @include subheader-mobile;
+      }
+      
+      &__date {
+        margin: 0;
+        font-family: "regular";
+        @include labels-mobile;
+      }
+    }
+    
+    &__text {
+      margin: 1% 0;
+      @include paragraph-mobile;
+      font-family: "regular";
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  
+  .comment {
+    padding: 2% 0;
+
+    &__info {
+      
+      &__firtsLine {
+        justify-content: flex-start;
+
+        &__name {
+          margin: 0 3% 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .comment {
+    padding: 4% 32px 4% 0;
+  }
+}
+  

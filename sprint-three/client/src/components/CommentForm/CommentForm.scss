@@ -1,0 +1,117 @@
+@import'../../partials/_typography';
+@import'../../partials/_variables';
+@import'../../partials/_mixins';
+
+.CommentForm {
+    margin-top: 32px;
+    
+    &__container {
+        display: flex;
+        
+        &__pic {
+            margin-top: 7%;
+            height: 45px;
+            width: 48px;
+            border-radius: 50%;
+        }
+
+        &__box {
+            padding-left: 16px;
+            
+            &__label {
+                margin: 0 0 2% 0;
+                @include labels-mobile;
+                font-family: "demi";
+            }
+            
+            &__input {
+                padding: auto 0 auto 2%;
+                height: 70px;
+                width: 100%;
+                @include paragraph-mobile;
+                font-family: "regular";
+                background-color: $Text-background;
+                border: 2px solid $Text-border;
+                box-sizing: border-box;
+                border-radius: 3px;
+    
+                &::placeholder {
+                    font-family: "regular";
+                    color: $Paragraph-text;
+                    @include paragraph-mobile;
+                }
+    
+                &:focus {
+                    outline-color: $Primary-Textlink;
+                }
+            }
+        }
+    }
+
+    &__button {
+        margin: 16px 0 24px 22%;
+        width: 78%;
+        height: 45px;
+        @include buttonStyle;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .CommentForm {
+        display: flex;
+        align-items: center;
+        
+        &__container {
+            width: 80%;
+
+            &__pic {
+                margin: 24px 0;
+            }
+            
+            &__box {
+                width: 90%;
+
+                &__label {
+                    @include labels-desktop;
+                }
+
+                &__input {
+                    margin-top: 0.7%;
+                    padding: auto 2%;
+                    height: 46px;
+                    @include paragraph-comments-desktop;
+
+                    &::placeholder{
+                        @include paragraph-comments-desktop;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            margin: 0 40px 0 16px;
+            width: 160px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .CommentForm {
+
+        &__container {
+
+            &__box {
+
+                &__input {
+                    width: 436px;
+                }
+            }
+        }
+
+        &__button {
+            margin-right: 32px;
+        }
+    }
+}
