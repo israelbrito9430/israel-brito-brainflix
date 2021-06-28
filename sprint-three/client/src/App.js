@@ -6,17 +6,17 @@ import {
 } from "react-router-dom";
 
 // Components
-import HomePage from "./pages/HomePage";
-import VideoUploadPage from "./pages/VideoUploadPage";
+import PageHome from "./pages/PageHome";
+import PageUpload from "./pages/PageUpload";
 
 export default function App() {
   return (
     <Router>
         <Switch>
-          <Route exact path="/" component={HomePage} ></Route>
-          <Route exact path="/home" component={HomePage}></Route>
-          <Route path="/home/:id" component={HomePage}></Route>
-          <Route exact path="/upload" component={VideoUploadPage}></Route>
+          <Route exact path="/" component={PageHome} ></Route>
+          <Route exact path="/home" component={PageHome}></Route>
+          <Route path="/home/:id" component={PageHome}></Route>
+          <Route exact path="/upload" component={PageUpload}></Route>
         </Switch>
     </Router>
   );

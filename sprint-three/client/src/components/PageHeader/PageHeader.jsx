@@ -7,7 +7,7 @@ import UserPic from '../../assets/images/Mohan-muruge.jpg'
 import searchIcon from '../../assets/icons/Icon-search.svg'
 
 // style
-import './Header.scss'
+import './PageHeader.scss'
 
 function PageHeader() {
   return (

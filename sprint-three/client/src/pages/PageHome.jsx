@@ -21,6 +21,7 @@ class PageHome extends React.Component {
             filteredVideos: [],
         };
     }
+    
 
     componentDidMount() {
         const videoId = this.props.match.params.id;
@@ -61,15 +62,20 @@ class PageHome extends React.Component {
     addCommentById = (id, data) => {
         AddCommentById(id, data).then((res => {
           const newCurrent = this.state.current;
-          newCurrent.comments = [...newCurrent.comments, res];
+          newCurrent.comments.unshift(res);
+
           this.setState({ current: newCurrent });
       }));
     };
 
-    deleteCommentById = (id) => {
-        DeleteCommentById(id).then((res => {
-          console.log('delete: ', res)
-      }));
+    deleteCommentById = (commentId) => {
+        const videoId = this.props.match.params.id;
+
+        DeleteCommentById(videoId, commentId).then((res => {
+          const newCurrent = this.state.current;
+          newCurrent.comments.filter(comment => comment.id !== res.id);
+          this.setState({ current: newCurrent });
+        }));
     };
 
     handleClick = (value) => {
@@ -95,7 +101,7 @@ class PageHome extends React.Component {
                         <CommentForm handleClick={this.handleClick} />
                         <div className="comments">
                             {this.state.current.comments.map(comment => (
-                                <CommentList key={comment.id} data={comment} />
+                                <CommentList key={comment.id} data={comment} handleDelete={this.deleteCommentById} />
                             ))}
                         </div>
                     </div>
