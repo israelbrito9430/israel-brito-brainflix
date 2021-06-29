@@ -83,5 +83,4 @@ class VideoUpload extends React.Component {
         )
     }
 }
-
 export default withRouter(VideoUpload);
