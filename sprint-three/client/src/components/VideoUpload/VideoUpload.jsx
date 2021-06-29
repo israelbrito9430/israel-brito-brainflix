@@ -17,7 +17,14 @@ class VideoUpload extends React.Component {
                 id: uuidv4(),
                 image: videoImage,
                 title: '',
-                description: ''
+                description: '',
+                channel: "Red Cow",
+                views: 0,
+                likes: 0,
+                duration: "4:01",
+                video: "https://project-2-api.herokuapp.com/stream",
+                timestamp: 1545162149000,
+                comments: []
             }
         }
     };
@@ -35,7 +42,7 @@ class VideoUpload extends React.Component {
     };
 
     handleClick = () => {
-        // UploadVideo(this.state.form);
+        UploadVideo(this.state.form);
         this.props.history.push("home");
     };
 

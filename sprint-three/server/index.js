@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 
 //routes
-const bookRoutes = require("./routes/books");
-const genreRoutes = require("./routes/genres");
+
+const videoRoutes = require("./routes/videos");
 
 const app = express();
 
@@ -20,8 +20,7 @@ app.use(cors());
 //     res.send('it works')
 // })
 
-app.use('/api/books', bookRoutes);
-app.use('/api/genres', genreRoutes);
+app.use('/api/videos', videoRoutes);
 
 app.listen(port, () => {
     console.log(`App is running on port ${port}`)

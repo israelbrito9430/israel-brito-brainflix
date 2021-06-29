@@ -21,7 +21,6 @@ class PageHome extends React.Component {
             filteredVideos: [],
         };
     }
-    
 
     componentDidMount() {
         const videoId = this.props.match.params.id;
@@ -73,7 +72,7 @@ class PageHome extends React.Component {
 
         DeleteCommentById(videoId, commentId).then((res => {
           const newCurrent = this.state.current;
-          newCurrent.comments.filter(comment => comment.id !== res.id);
+          newCurrent.comments = newCurrent.comments.filter(comment => comment.id !== res.id);
           this.setState({ current: newCurrent });
         }));
     };

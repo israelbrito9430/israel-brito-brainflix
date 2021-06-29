@@ -1,42 +1,56 @@
 [
     {
-       "id": "d5768ade-66b8-4006-b89d-1200dc6809e3",
-       "title": "Lord of the Rings",
-       "author": "J.R.R. Tolken",
-       "genre": "Fantasy",
-       "description": "A young hobbit, Frodo, who has found the One Ring that belongs to the Dark Lord Sauron, begins his journey with eight companions to Mount Doom, the only place where it can be destroyed.",
-       "bookImage": "/book.png"
+        "id": "1af0jruup5gu",
+        "title": "BMX Rampage: 2018 Highlights",
+        "channel": "Red Cow",
+        "image": "https://i.imgur.com/l2Xfgpl.jpg"
     },
     {
-      "id": "c3baeb12-13f1-46c4-9e21-161c57c98b78",
-       "title": "Harry Potter",
-       "author": "J.K. Rowling",
-       "genre": "Fiction",
-       "description": "Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.",
-       "bookImage": "/book.png"
+        "id": "1ainjruutd1j",
+        "title": "Become A Travel Pro In One Easy Lesson",
+        "channel": "Todd Welch",
+        "image": "https://i.imgur.com/5qyCZrD.jpg"
     },
     {
-      "id": "397c4ed1-ba07-4b79-b6c4-9a7d071d90f8",
-       "title": "Steve Jobs",
-       "author": "Walter Isaacson",
-       "genre": "Biography",
-       "description": "Steve Jobs is the authorized self-titled biography of Steve Jobs. The book was written at the request of Jobs by Walter Isaacson, a former executive at CNN and TIME who has written best-selling biographies of Benjamin Franklin and Albert Einstein.",
-       "bookImage": "/book.png"
+        "id": "1aivjruutn6a",
+        "title": "Les Houches The Hidden Gem Of The Chamonix",
+        "channel": "Cornelia Blair",
+        "image": "https://i.imgur.com/yFS8EBr.jpg"
     },
     {
-      "id": "ef04a1a0-b7eb-4fd0-bc12-29a652cabafa",
-      "title": "Sapiens: A Brief History of Humankind",
-      "author": "Yuval Noah Harari",
-      "genre": "Non-Fiction",
-      "description": "Sapiens: A Brief History of Humankind is a book by Yuval Noah Harari, first published in Hebrew in Israel in 2011 based on a series of lectures Harari taught at The Hebrew University of Jerusalem, and in English in 2014.",
-      "bookImage": "/book.png"
-   },
-   {
-      "id": "4e83084e-8d14-4b4b-b8b6-d2a1918c11b7",
-      "title": "Nineteen Eighty-Four",
-      "author": "George Orwell",
-      "genre": "Fiction",
-      "description": "Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that grows more haunting as its futuristic purgatory becomes more real. Published in 1949, the book offers political satirist George Orwell's nightmarish vision of a totalitarian, bureaucratic world and one poor stiff's attempt to find individuality. The brilliance of the novel is Orwell's prescience of modern life—the ubiquity of television, the distortion of the language—and his ability to construct such a thorough version of hell. Required reading for students since it was published, it ranks among the most terrifying novels ever written. ",
-      "bookImage": "/book.png"
-   }
- ]
+        "id": "1a3cjruucpf7",
+        "title": "Travel Health Useful Medical Information For",
+        "channel": "Glen Harper",
+        "image": "https://i.imgur.com/MMDMgD7.jpg"
+    },
+    {
+        "id": "1am3jruuwagz",
+        "title": "Cheap Airline Tickets Great Ways To Save",
+        "channel": "Emily Harper",
+        "image": "https://i.imgur.com/ibLw5q5.jpg"
+    },
+    {
+        "id": "1akljruuvhzt",
+        "title": "Take A Romantic Break In A Boutique Hotel",
+        "channel": "Ethan Owen",
+        "image": "https://i.imgur.com/7rD6Mf6.jpg"
+    },
+    {
+        "id": "1ae5jruuoc4q",
+        "title": "Choose the Perfect Accommodations",
+        "channel": "Lydia Perez",
+        "image": "https://i.imgur.com/0hi3N4B.jpg"
+    },
+    {
+        "id": "1a4kjruuedd9",
+        "title": "Cruising Destination Ideas",
+        "channel": "Timothy Austin",
+        "image": "https://i.imgur.com/DDJNZNw.jpg"
+    },
+    {
+        "id": "1a8qhruuzky3",
+        "title": "Train Travel On Track For Safety",
+        "channel": "Scotty Cranmer",
+        "image": "https://i.imgur.com/i6S8m7I.jpg"
+    }
+  ]
